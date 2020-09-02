@@ -6,7 +6,16 @@ Simple configurations to make working with the terminal a bit easier.
 - Changes up and down keys to autocomplete with history instead of choosing the previous/next command ran
 
 ## Usage
-Copy them in your home folder and restart the session (sourcing .inputrc does not work).
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/stein212/linux-rcs/master/add-rcs.sh)"
+```
+OR
+
+Copy them in your home folder.
+
+---
+
+Then restart the session to apply the change.
 
 ## Note
 Mainly for NUS systems, probably does not work for all.
