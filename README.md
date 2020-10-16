@@ -3,3 +3,6 @@ Simple configurations to make working with the terminal a bit easier
 
 ## Note
 Mainly for NUS systems, probably does not work for all.
+
+## .vimrc
+- Create `~/.vim/undodir` so that it can store undofiles(?)
