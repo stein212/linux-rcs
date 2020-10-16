@@ -20,7 +20,7 @@ highlight ColorColumn ctermbg=4 guibg=lightgrey
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'altercation/vim-colors-solarized'
+Plug 'ayu-theme/ayu-vim'
 Plug 'jremmen/vim-ripgrep'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-utils/vim-man'
@@ -28,6 +28,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
-set background=dark
-let g:solarized_termtrans=1
-colorscheme solarized
+autocmd CursorHold * silent call CocActionAsync('highlight')
+set termguicolors
+let ayucolor='mirage'
+colorscheme ayu
