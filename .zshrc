@@ -11,10 +11,13 @@ source ~/.zsh/plugins/git.plugin.zsh
 # ls with color
 alias ls='ls --color'
 
-# tab completion with colors
+# tab completion
+## tab completion with colors
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-# tab completion case insensitive
+## tab completion case insensitive
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+## menu completion
+zstyle ':completion:*' menu select
 
 # up and down 
 bindkey "$key[Up]" history-beginning-search-backward
