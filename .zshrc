@@ -9,6 +9,7 @@ source ~/.zsh/themes/agnoster.zsh-theme
 source ~/.zsh/plugins/git.plugin.zsh
 
 # ls with color
+eval $(dircolors ~/.zsh/dircolors/dircolors.256dark)
 alias ls='ls --color'
 
 # tab completion
